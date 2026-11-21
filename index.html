@@ -27,7 +27,7 @@
     "addressCountry": "EG"
   },
   "url": "https://mohamednagieb4.github.io/",
-  "image": "https://mohamednagieb4.github.io/images/mohamed-nagieb.jpg",
+  "image": "https://mohamednagieb4.github.io/images/mohamed-nagieb-purple.jpg",
   "sameAs": [
     "https://www.behance.net/mohamednagieb4",
     "https://wa.me/201092384808"
@@ -493,6 +493,19 @@
     border-radius:22px; border:1px solid rgba(179,48,119,.4);
     box-shadow:0 24px 60px rgba(0,0,0,.55), 0 0 36px rgba(179,48,119,.20);
   }
+  /* Third About portrait — Mohamed at work in the office. Same framing
+     language as the second portrait, with the offset outline flipped
+     back to the first frame's side so the three read as one set. */
+  .photo-frame-3{ position:relative; margin-top:clamp(30px,4vw,44px); }
+  .photo-frame-3::before{
+    content:""; position:absolute; inset:0; transform:translate(14px,14px);
+    border:1.5px solid rgba(179,48,119,.55); border-radius:22px; z-index:0;
+  }
+  .photo-frame-3 img{
+    position:relative; z-index:1; width:100%; aspect-ratio:4/5; object-fit:cover; object-position:center;
+    border-radius:22px; border:1px solid rgba(179,48,119,.4);
+    box-shadow:0 24px 60px rgba(0,0,0,.55), 0 0 36px rgba(179,48,119,.20);
+  }
   .about-copy p{ color:var(--muted); font-size:1.06rem; margin:0 0 18px; max-width:640px; }
   .about-copy p strong{ color:var(--text); }
   .facts{ display:grid; grid-template-columns:1fr 1fr; gap:0; border:1px solid var(--line); border-radius:var(--radius); overflow:hidden; margin-top:30px; }
@@ -895,11 +908,8 @@
               <text class="badge-ring"><textPath href="#circ" textLength="238" lengthAdjust="spacing">OPEN TO WORK • FREELANCE •</textPath></text>
               <text x="50" y="56" text-anchor="middle" class="badge-c" style="font-size:17px; letter-spacing:0;">✦</text>
             </svg>
-            <img loading="lazy" decoding="async" src="images/mohamed-nagieb.jpg" alt="Mohamed Nagieb – Senior Graphic Designer" />
-            <div class="photo-tag">Mohamed Nagieb — <b>Senior Graphic Designer</b></div>
-          </div>
-          <div class="photo-frame-2 rv" style="--d:.1s">
             <img loading="lazy" decoding="async" src="images/mohamed-nagieb-purple.jpg" alt="Mohamed Nagieb – Senior Graphic Designer" />
+            <div class="photo-tag">Mohamed Nagieb — <b>Senior Graphic Designer</b></div>
           </div>
         </div>
         <div class="about-copy">
